@@ -7,7 +7,6 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/rote/%{name}-%{version}.tar.gz
 # Source0-md5:	a80074dc2fbabd6e204bc07a61e57120
-# Source0-size:	61440
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://rote.sourceforge.net/
 BuildRequires:	automake
