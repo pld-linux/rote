@@ -5,7 +5,7 @@ Version:	0.2.6
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/rote/%{name}-%{version}.tar.gz
 # Source0-md5:	a80074dc2fbabd6e204bc07a61e57120
 # Source0-size:	61440
 Patch0:		%{name}-DESTDIR.patch
@@ -66,6 +66,7 @@ CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
