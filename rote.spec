@@ -30,6 +30,7 @@ Summary:	Header files for ROTE library
 Summary(pl):	Pliki nag³ówkowe biblioteki ROTE
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	ncurses-devel
 
 %description devel
 Header files for ROTE library.
