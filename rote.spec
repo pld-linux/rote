@@ -10,6 +10,8 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-size:	61440
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://rote.sourceforge.net/
+BuildRequires:	automake
+BuildRequires:	autoconf
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,7 +58,6 @@ Statyczna biblioteka ROTE.
 
 %build
 CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
-%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
