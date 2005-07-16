@@ -1,0 +1,24 @@
+diff -ur rote-0.2.8-o/rote.h rote-0.2.8/rote.h
+--- rote-0.2.8-o/rote.h	2005-07-07 19:18:10.000000000 -0600
++++ rote-0.2.8/rote.h	2005-07-15 20:56:58.000000000 -0600
+@@ -29,7 +29,7 @@
+ #ifndef btco_ROTE_rote_h
+ #define btco_ROTE_rote_h
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <sys/types.h>
+ #include <unistd.h>
+ #include <stdlib.h>
+diff -ur rote-0.2.8-o/rote_keymap.c rote-0.2.8/rote_keymap.c
+--- rote-0.2.8-o/rote_keymap.c	2004-10-06 06:18:49.000000000 -0600
++++ rote-0.2.8/rote_keymap.c	2005-07-15 20:57:14.000000000 -0600
+@@ -21,7 +21,7 @@
+ 
+ #include "rote.h"
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <stdlib.h>
+ #include <string.h>
+ 
