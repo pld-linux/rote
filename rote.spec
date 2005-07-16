@@ -1,13 +1,13 @@
 Summary:	ROTE Our Own Terminal Emulation Library
 Summary(pl):	Biblioteka emulacji powtórzeñ terminali
 Name:		rote
-Version:	0.2.6
+Version:	0.2.8
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/rote/%{name}-%{version}.tar.gz
-# Source0-md5:	a80074dc2fbabd6e204bc07a61e57120
-Patch0:		%{name}-DESTDIR.patch
+# Source0-md5:	9e5901267d9ed239343f55a54d76e48e
+Patch0:	%{name}-ncurses.patch
 URL:		http://rote.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	autoconf
@@ -53,7 +53,6 @@ Statyczna biblioteka ROTE.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
