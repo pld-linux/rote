@@ -53,6 +53,7 @@ Statyczna biblioteka ROTE.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
