@@ -7,10 +7,10 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/rote/%{name}-%{version}.tar.gz
 # Source0-md5:	9e5901267d9ed239343f55a54d76e48e
-Patch0:	%{name}-ncurses.patch
+Patch0:		%{name}-ncurses.patch
 URL:		http://rote.sourceforge.net/
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,7 +56,7 @@ Statyczna biblioteka ROTE.
 %patch0 -p1
 
 %build
-CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
+CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
