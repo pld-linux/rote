@@ -1,5 +1,5 @@
 Summary:	ROTE Our Own Terminal Emulation Library
-Summary(pl.UTF-8):   Biblioteka emulacji powtórzeń terminali
+Summary(pl.UTF-8):	Biblioteka emulacji powtórzeń terminali
 Name:		rote
 Version:	0.2.8
 Release:	1
@@ -28,7 +28,7 @@ esc, kontrolować znaki itepe.
 
 %package devel
 Summary:	Header files for ROTE library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki ROTE
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki ROTE
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	ncurses-devel
@@ -41,7 +41,7 @@ Pliki nagłówkowe biblioteki ROTE.
 
 %package static
 Summary:	Static ROTE library
-Summary(pl.UTF-8):   Statyczna biblioteka ROTE
+Summary(pl.UTF-8):	Statyczna biblioteka ROTE
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
