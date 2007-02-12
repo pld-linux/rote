@@ -1,5 +1,5 @@
 Summary:	ROTE Our Own Terminal Emulation Library
-Summary(pl):	Biblioteka emulacji powtórzeñ terminali
+Summary(pl.UTF-8):   Biblioteka emulacji powtÃ³rzeÅ„ terminali
 Name:		rote
 Version:	0.2.8
 Release:	1
@@ -20,15 +20,15 @@ programmer to set up virtual 'screens' and send them data. They will
 emulate the behavior of a VT102 terminal, interpreting escape
 sequences, control characters and such.
 
-%description -l pl
-ROTE jest prost± bibliotek± C do emulacji terminala VT102. Pozwala
-programi¶cie na ustawienie wirtualnych ekranów i wysy³anie do nich
-danych. Mo¿e emulowaæ zachowanie terminala VT102, interpretowaæ kody
-esc, kontrolowaæ znaki itepe.
+%description -l pl.UTF-8
+ROTE jest prostÄ… bibliotekÄ… C do emulacji terminala VT102. Pozwala
+programiÅ›cie na ustawienie wirtualnych ekranÃ³w i wysyÅ‚anie do nich
+danych. MoÅ¼e emulowaÄ‡ zachowanie terminala VT102, interpretowaÄ‡ kody
+esc, kontrolowaÄ‡ znaki itepe.
 
 %package devel
 Summary:	Header files for ROTE library
-Summary(pl):	Pliki nag³ówkowe biblioteki ROTE
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki ROTE
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	ncurses-devel
@@ -36,19 +36,19 @@ Requires:	ncurses-devel
 %description devel
 Header files for ROTE library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki ROTE.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki ROTE.
 
 %package static
 Summary:	Static ROTE library
-Summary(pl):	Statyczna biblioteka ROTE
+Summary(pl.UTF-8):   Statyczna biblioteka ROTE
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static ROTE library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka ROTE.
 
 %prep
