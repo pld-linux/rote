@@ -59,7 +59,6 @@ Statyczna biblioteka ROTE.
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %{__aclocal}
 %{__autoconf}
-%{__autoheader}
 %configure
 %{__make}
 
@@ -78,10 +77,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/librote.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/librote.so.?
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/%{name}-config
-%attr(755,root,root) %{_libdir}/lib*.so
+%attr(755,root,root) %{_libdir}/librote.so
 %{_includedir}/%{name}
